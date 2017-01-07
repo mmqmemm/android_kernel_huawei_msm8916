@@ -705,7 +705,7 @@ static int msm_btsco_be_hw_params_fixup(struct snd_soc_pcm_runtime *rtd,
 
 	return 0;
 }
-
+/*
 static int msm_bta2dp_be_hw_params_fixup(struct snd_soc_pcm_runtime *rtd,
 					struct snd_pcm_hw_params *params)
 {
@@ -720,7 +720,7 @@ static int msm_bta2dp_be_hw_params_fixup(struct snd_soc_pcm_runtime *rtd,
 
 	return 0;
 }
-
+*/
 static int msm_proxy_rx_be_hw_params_fixup(struct snd_soc_pcm_runtime *rtd,
 					struct snd_pcm_hw_params *params)
 {
@@ -2441,7 +2441,7 @@ static struct snd_soc_dai_link msm8x16_wcd_dai[] = {
 		.be_hw_params_fixup = msm_tx_be_hw_params_fixup,
 		.ops = &msm8x16_mi2s_be_ops,
 		.ignore_suspend = 1,
-	},
+	},/*
 	{
 		.name = LPASS_BE_INT_BT_A2DP_RX,
 		.stream_name = "Internal BT-A2DP Playback",
@@ -2453,7 +2453,7 @@ static struct snd_soc_dai_link msm8x16_wcd_dai[] = {
 		.be_id = MSM_BACKEND_DAI_INT_BT_A2DP_RX,
 		.be_hw_params_fixup = msm_bta2dp_be_hw_params_fixup,
 		.ignore_suspend = 1,
-	},
+	},*/
 };
 
 /* Digital audio interface glue - connects codec <---> CPU */
