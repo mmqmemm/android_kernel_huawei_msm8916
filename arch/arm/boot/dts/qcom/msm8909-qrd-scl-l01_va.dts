@@ -13,9 +13,15 @@
 /dts-v1/;
 
 #include "msm8909-qrd.dtsi"
-#include "huawei_base.dtsi"
-#include "scale/huawei.dtsi"
-#include "scale/huawei-battery-bq24296.dtsi"
+#include "scale/msm8909-qrd-scale.dtsi"
+
+&soc {
+	i2c@78b8000{ /* BLSP1 QUP6 */
+		bq24296m_charger@6b {
+		status = "ok";
+		};
+	};
+};
 
 / {
 	model = "Qualcomm MSM 8909 HUAWEI SCL";

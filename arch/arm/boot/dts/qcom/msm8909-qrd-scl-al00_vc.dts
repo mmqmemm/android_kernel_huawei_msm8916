@@ -13,9 +13,7 @@
 /dts-v1/;
 
 #include "msm8909-qrd.dtsi"
-#include "huawei_base.dtsi"
-#include "scale/huawei.dtsi"
-#include "scale/huawei-battery-linear.dtsi"
+#include "scale/msm8909-qrd-scale.dtsi"
 
 / {
 	model = "Qualcomm MSM 8909 HUAWEI SCL";
