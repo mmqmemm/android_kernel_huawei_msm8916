@@ -168,6 +168,32 @@
 			bias-pull-up;
 		};
 	};
+	
+	/* pins override */
+
+	cam_sensor_front {
+		qcom,pins = <&gp 28>, <&gp 33>;
+		qcom,num-grp-pins = <2>;
+	};
+
+	cam_sensor_front_sleep {
+		qcom,pins = <&gp 28>, <&gp 33>;
+		qcom,num-grp-pins = <2>;
+	};
+
+	cross-conn-det {
+		qcom,pins = <&gp 52>;
+	};
+
+	tpiu_seta_18 {
+		qcom,pins = <&gp 52>;
+	};
+
+	gpio_led_pins {
+		qcom,pins = <&gp 8>, <&gp 9>, <&gp 10>;
+		qcom,num-grp-pins = <3>;
+	};
+
 };
 
 &i2c_1 { /* BLSP1 QUP1 */
